@@ -1,0 +1,478 @@
+@font-face
+{
+    font-family: 'Gilroy ExtraBold';
+    font-weight: 700;
+    font-style: normal;
+    src: url(/fonts/gilroyextrabold.woff) format('woff'),
+    url(fonts/gilroyextrabold.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Gilroy Light';
+    font-style: normal;
+    src: url(fonts/gilroylight.woff) format('woff'),
+    url(fonts/gilroylight.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    src: url(fonts/opensans.woff) format('woff'),
+    url(fonts/opensans.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Open Sans Light';
+    font-style: normal;
+    src: url(fonts/opensanslight.woff) format('woff'),
+    url(fonts/opensanslight.woff2) format('woff2');
+}
+.logo { 
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%); 
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    opacity: 0.2;
+    } 
+    .logo:hover { 
+    -webkit-filter: none; 
+    -moz-filter: none; 
+    -ms-filter: none; 
+    -o-filter: none; 
+    filter: none;
+    opacity: 1;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+h1 {
+    margin: 0;
+    font-size: 48px;
+    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+}
+h2 {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+}
+h3 {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Gilroy', sans-serif;
+}
+p, span {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Open Sans Light';
+    line-height: 30px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.wrap {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+}
+.content-container {
+    width: 1160px;
+    margin: auto;
+    z-index: 1;
+}
+header {
+    margin-top: 50px;
+    background-color: #f7e296;
+    height: 200px;
+}
+.logotype {
+    margin-left: 60px;
+    margin-top: -30px;
+    position: absolute;
+    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+    font-size: 48px;
+
+}
+.navi1, .navi2, .menu, .menu2, .catalog-field, .catalog {
+    display: flex;
+}
+input[type="search"] {
+    border: none;
+    background-color: #f7e296;
+    margin-left: 20px;
+    outline: 0;
+}
+input[type="search"]:focus {
+    box-shadow: 0px -2px 0px #000000 inset;
+}
+input[type="submit"] {
+    display: none;
+}
+.menu {
+    justify-content: space-between;
+}
+.icon {
+    padding: 0px 5px 0px 5px;
+}
+.enter, .compare, .cart {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Open Sans Light';
+    font-size: 15px;
+}
+.enter {
+    padding-right: 150px;
+}
+.navi1, .navi2 {
+    padding: 40px 60px 0px 60px;
+    justify-content: space-between;
+}
+.catalog-field {
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+.menu2 > a {
+    padding: 0px 20px 0px 20px;
+    letter-spacing: 3px;
+    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+}
+.menu2 > a:hover, .catalog-field:hover, .enter:hover, .compare:hover, .cart:hover  {
+    opacity: 0.6;
+}
+.menu2 > a:active, .catalog-field:active, .enter:active, .compare:active, .cart:active  {
+    opacity: 0.3;
+}
+.contacts-field {
+    margin-left: 90px;
+}
+.catalog {
+    /* добавить скриптуху */
+    display: none; 
+    padding: 20px 60px 0px 60px;
+    background-color: #f7e296;
+    /* z-index: 1; */
+}
+.catalog > section {
+    padding-right: 50px;
+}
+.slider
+{
+    position: relative;
+    min-height: 495px;
+    margin-bottom: 99px;
+}
+
+.slider::after
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 112px;
+    content: '';
+    background: #f7e296;
+}
+
+.slider-control
+{
+    position: absolute;
+    right: 80px;
+    bottom: 151px;
+    margin: 0;
+}
+
+.slide-toggle
+{
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-image: url(img/slider-button-empty.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-toggle-selected
+{
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-image: url(img/slider-button.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-control li:hover
+{
+    opacity: 1;
+}
+
+.slider-control li:active
+{
+    opacity: .3;
+}
+.slider-control li {
+    display: inline-block;
+    vertical-align: baseline;
+}
+section.slide-2,
+section.slide-3
+{
+    display: none;
+}
+.slider-control > li:nth-of-type(2)
+{
+    margin-left: 15px;
+}
+
+.slider-control > li:nth-of-type(3)
+{
+    margin-left: 17px;
+}
+
+.slide
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide > img
+{
+    margin-left: 89px;
+}
+
+.slide.slide-1 img
+{
+    width: 384px;
+    height: 486px;
+    margin-left: 92px;
+}
+
+.slide.slide-2 img
+{
+    width: 385px;
+    height: 480px;
+    margin-top: 12px;
+    margin-left: 116px;
+}
+
+.slide.slide-3 img
+{
+    width: 526px;
+    height: 334px;
+    margin-top: 65px;
+    margin-left: 32px;
+}
+
+.slide-description
+{
+    position: relative;
+    width: 511px;
+    margin-top: 81px;
+    margin-right: 48px;
+}
+
+.slide-description::after
+{
+    position: absolute;
+    top: -43px;
+    left: 0;
+    width: 99px;
+    height: 7px;
+    content: '';
+    background-color: #fff;
+}
+
+.slide-number
+{
+    font-family: 'Gilroy ExtraBold','Arial',sans-serif;
+    font-size: 180px;
+    line-height: 180px;
+    position: absolute;
+    z-index: 1;
+    top: -95px;
+    right: -8px;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.slide h2
+{
+    font-family: 'Gilroy ExtraBold', 'Arial',sans-serif;
+    font-size: 47px;
+    line-height: 56px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: .012em;
+    word-spacing: .012em;
+
+    color: #000;
+}
+
+.slide p
+{
+    line-height: 30px;
+    width: 95%;
+    margin-bottom: 43px;
+    letter-spacing: .012em;
+}
+
+.slide-read-more
+{
+    padding-right: 40px;
+    padding-left: 44px;
+}
+
+.slide-features
+{
+    display: flex;
+    width: 431px;
+    margin-top: 52px;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.slide-feature-value
+{
+    font-family: 'Gilroy Light','Arial',sans-serif;
+    font-size: 36px;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: .012em;
+    color: #000;
+}
+
+.slide-feature-property
+{
+    font-family: 'Open Sans Light','Arial',sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: .012em;
+}
+/* ДОБАВИТЬ СЛАЙДЕР */
+.most-popular {
+    /* z-index: -1; */
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 160px;
+    background-color: #f7e296;
+}
+.item:hover {
+    background-color: #f0c52e;
+}
+.item-container:active {
+    opacity: 0.3;
+}
+.servises {
+    display: flex;
+    margin-top: 80px;
+}
+.menu3 {
+    width: 300px;
+    background-image: url(img/separator.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding: 60px 0px 60px 0px;
+}
+.menu3 >button {
+    margin: 10px 0px 10px 0px;
+}
+.description-block {
+    padding: 60px 0px 0px 80px;
+}
+.delivery {
+display: flex;
+padding-top: 20px;
+}
+.delivery > img {
+    margin-top: -70px;
+    padding-left: 100px;
+}
+.color {
+    position: absolute;
+    background-color: #ededed;
+    height: 250px;
+    width: 100%;
+    margin-top: 1227px;
+}
+.partner {
+    margin-top: 130px;
+}
+.about-contacts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.button
+{
+    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+    font-size: 18px;
+
+    position: relative;
+
+    display: inline-block;
+
+    padding-top: 9px;
+    padding-right: 5px;
+    padding-bottom: 9px;
+    padding-left: 5px;
+
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.button:active
+{
+    color: rgba(0, 0, 0, .3);
+}
+
+.button::before
+{
+    position: absolute;
+    z-index: -1;
+    top: 40%;
+    left: 0;
+
+    width: 100%;
+    height: 20%;
+
+    content: '';
+    transition: all .3s ease-in-out;
+
+    background-color: #f0c52e;
+}
+
+.button:hover::before
+{
+    top: 0;
+
+    height: 100%;
+}
