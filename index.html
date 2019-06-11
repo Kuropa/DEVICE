@@ -14,19 +14,23 @@
                             <input class="search-field" placeholder="Поиск по сайту" type="search">
                             <input class="search-button" type="submit" value="Найти">
                         </form>
-                        <nav class="catalog-menu">
-                            <ul class="catalog-items">
-                                <a class="catalog-additional" href="#">Каталог товаров</a>
-                                <ul class="catalog-additional">
-                                    <li><a class="catalog-link" href="#">Виртуальная реальность</a></li>
-                                    <li><a class="catalog-link" href="#">Фитнес-браслеты</a></li>
-                                    <li><a class="catalog-link" href="#">Квадрокоптеры</a></li>
-                                    <li><a class="catalog-link" href="#">Моноподы для селфи</a></li>
-                                    <li><a class="catalog-link" href="#">Умные часы</a></li>
-                                    <li><a class="catalog-link" href="#">Эшкн-камеры</a></li>
-                                </ul>
-                            </ul>
-                        </nav>
+                        <div class="catalog-menu">
+                            <a class="catalog-additional" href="#">КАТАЛОГ ТОВАРОВ</a>
+                            <div class="drop-catalog">
+                                <div class="drop-colum">
+                                    <a class="catalog-link" href="#">Виртуальная реальность</a>
+                                    <a class="catalog-link" href="#">Фитнес-браслеты</a>
+                                    <a class="catalog-link" href="#">Квадрокоптеры</a>
+                                </div>
+                                <div class="drop-colum">
+                                    <a class="catalog-link" href="#">Моноподы для селфи</a>
+                                    <a class="catalog-link" href="#">Умные часы</a>
+                                </div>
+                                <div class="drop-colum">
+                                    <a class="catalog-link" href="#">Эшкн-камеры</a>
+                                </div>
+                            </div>
+                        </div>
                    </div>
                     <div class="menu-wrapper">
                         <div class="menu-link">
@@ -46,7 +50,7 @@
         <main>
             <div class="main-wrapper">
                 <div class="slider">
-                    <section class="slide">
+                    <section class="slide slide-1">
                         <div class="slide-image">
                             <img src="img/slider1.png" />
                         </div>
@@ -71,7 +75,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="slide">
+                    <section class="slide slide-2 visually-hidden">
                         <div class="slide-image">
                             <img src="img/slider2.png" />
                         </div>
@@ -80,13 +84,15 @@
                             <p class="slide-headline">Худеем<br> правильно!</p>
                             <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                             <a class="extra-button">Подробнее</a>
-                            <div class="slide-specification-wrapper">
-                                <p class="slide-specification">48 часов</p>
-                                <p class="slide-specif-description">Без подзарядки</p>
+                            <div class="slide-specifications-container">
+                                <div class="slide-specification-wrapper">
+                                    <p class="slide-specification">48 часов</p>
+                                    <p class="slide-specif-description">Без подзарядки</p>
+                                </div>
                             </div>
                         </div>
                     </section>
-                    <section class="slide">
+                    <section class="slide slide-3 visually-hidden">
                         <div class="slide-image">
                             <img src="img/slider3.png" />
                         </div>
@@ -139,33 +145,37 @@
                         <p class="item-description">Квадрокоптеры</p>
                     </div>
                 </div>
-                <div class="service-container">
+            </div>
+            <div class="substrate-container">
+               <div class="main-wrapper service-container">
                     <ul class="service-buttons">
-                        <li class="selected-service">
-                          <label class="extra-button service-button-1">Доставка</label>
-                        </li>
-                        <li>
-                          <label class="extra-button service-button-2">Гарантия</label>
-                        </li>
-                        <li>
-                          <label class="extra-button service-button-3">Кредит</label>
-                        </li>
-                      </ul>
-                    <div class="service-slides">
-                        <section class="service service-1">
-                            <p class="service-slide-headline">Доставка</p>
-                            <p class="service-slide-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                        </section>
-                        <section class="service service-2 visually-hidden">
-                            <p class="service-slide-headline">Гарантия</p>
-                            <p class="service-slide-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                        </section>
-                        <section class="service service-3 visually-hidden">
-                            <p class="service-slide-headline">Кредит</p>
-                            <p class="service-slide-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                        </section>
+                            <li class="selected-service">
+                                <label class="extra-button service-button-1">Доставка</label>
+                            </li>
+                            <li>
+                                <label class="extra-button service-button-2">Гарантия</label>
+                            </li>
+                            <li>
+                                <label class="extra-button service-button-3">Кредит</label>
+                            </li>
+                            </ul>
+                        <div class="service-slides">
+                            <section class="service service-1">
+                                <p class="service-slide-headline">Доставка</p>
+                                <p class="service-slide-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                            </section>
+                            <section class="service service-2 visually-hidden">
+                                <p class="service-slide-headline">Гарантия</p>
+                                <p class="service-slide-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                            </section>
+                            <section class="service service-3 visually-hidden">
+                                <p class="service-slide-headline">Кредит</p>
+                                <p class="service-slide-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                            </section>
                     </div>
-                </div>
+               </div>
+            </div>
+            <div class="main-wrapper">
                 <div class="partners">
                     <a><img class="partner-logo" src="img/logo1.png" /></a>
                     <a><img class="partner-logo" src="img/logo2.png" /></a>

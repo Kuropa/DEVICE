@@ -36,7 +36,7 @@ function slideSwitcher () {
                 element.style.display = 'flex';
             }
         }
-        document.querySelector('.slider-control').style.display = 'block';
+        document.querySelector('.slider-control').style.display = 'flex';
     };
 
 function serviceSwitcher() {
