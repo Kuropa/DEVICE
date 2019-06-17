@@ -3,7 +3,8 @@
     font-family: 'Gilroy ExtraBold';
     font-weight: 700;
     font-style: normal;
-    src: url(/fonts/gilroyextrabold.woff) format('woff'),
+
+    src: url(fonts/gilroyextrabold.woff) format('woff'),
     url(fonts/gilroyextrabold.woff2) format('woff2');
 }
 
@@ -11,6 +12,7 @@
 {
     font-family: 'Gilroy Light';
     font-style: normal;
+
     src: url(fonts/gilroylight.woff) format('woff'),
     url(fonts/gilroylight.woff2) format('woff2');
 }
@@ -20,6 +22,7 @@
     font-family: 'Open Sans';
     font-weight: 400;
     font-style: normal;
+
     src: url(fonts/opensans.woff) format('woff'),
     url(fonts/opensans.woff2) format('woff2');
 }
@@ -28,9 +31,11 @@
 {
     font-family: 'Open Sans Light';
     font-style: normal;
+
     src: url(fonts/opensanslight.woff) format('woff'),
     url(fonts/opensanslight.woff2) format('woff2');
 }
+
 
 .extra-button
 {
@@ -470,6 +475,8 @@ main{
 .slide{
     display: flex;
     justify-content: space-between;
+    width: 990px;
+    height: 530px;
 }
 
 .slide-description-container
@@ -519,12 +526,19 @@ main{
     margin-top: 10px;
 }
 
+.slide-bottom
+{
+    position: absolute;
+    bottom: 0;
+}
+
 .slide-specifications-container
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 30px;
     width: 420px;
+    bottom: 0;
 }
 
 .slide-specification
@@ -889,10 +903,12 @@ main{
 
 .modal-close
 {
-    background: #ffc600;
+    background-image: url(img/modal-close.png);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
     border: none;
-    color: #ffffff;
+    background-color: #ffffff;
     cursor: pointer;
     height: 50px;
     opacity: .6;
@@ -935,10 +951,12 @@ textarea
     background-color: #f2f2f2;
     border: none;
     height: 156px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     outline: none;
     resize: none;
-    width: 760px;
+    width: 720px;
+    font-size: 20px;
+    padding: 20px;
 }
 
 .form-name-area > input, .form-mail-area > input
@@ -948,6 +966,7 @@ textarea
     outline: none;
     padding: 16px 20px;
     width: 300px;
+    font-size: 15px;
 }
 
 .contacts-map

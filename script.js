@@ -91,6 +91,7 @@ function writeUsButton() {
     });
 }
 
+
 function formValidation() {
     const form = document.querySelector('.form-write-us');
     const modal = document.querySelector('.modal-write-us');
