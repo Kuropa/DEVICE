@@ -450,6 +450,7 @@ header
 .catalog-menu:hover > .drop-catalog
 {
     display: flex;
+    opacity: 1;
     
 }
 
