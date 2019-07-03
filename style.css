@@ -84,7 +84,7 @@ body
 {
     margin: 0;
     padding: 0;
-    width: 100%;
+    min-width: 1160px;
 }
 
 header
@@ -311,6 +311,7 @@ header
 {
     margin-top: 50px;
     position: relative;
+    width: 500px;
 }
 
 .menu-info-delivery
@@ -393,6 +394,7 @@ header
     letter-spacing: 4px;
     position: relative;
     text-decoration: none;
+    padding-left: 15px;
 }
 
 .catalog-additional::after
@@ -414,6 +416,9 @@ header
 .drop-colum
 {
     width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
 }
 
 .drop-catalog
